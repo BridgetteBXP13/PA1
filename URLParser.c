@@ -42,7 +42,7 @@ int main()
 	bool isValid = true;	/* If the url is valid or not */	
 
 	/* Call the display version function */
-	/*displayVersion(version); */
+	displayVersion(version); 
 	
 	/* Prompt user to give us their url */
 	(void)printf("Please enter your url for me to analyze:\n");
