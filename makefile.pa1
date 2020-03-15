@@ -1,0 +1,13 @@
+PA01_URLParser: URLParser.o version.o
+	gcc -o PA01_URLParser URLParser.o version.o
+
+version: version.c version.h
+	gcc -c version.c
+
+URLParser: URLParser.c version.c version.h
+	gcc -c URLParser.c
+
+cleanall:
+	rm URLParser.o
+	rm version.o
+	rm PA01_URLParser
